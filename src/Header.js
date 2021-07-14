@@ -20,7 +20,7 @@ const Header = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img width={32} height={32} alt="Github" src="/public/GitHub.png" />{" "}
+          <img width={32} height={32} alt="Github" src="/GitHub.png" />
         </a>
       </div>
     </header>

@@ -1,6 +1,7 @@
 import styles from "./App.module.css";
 import Layout from "./Layout";
 import PostItem from "./PostItem";
+import WorkItem from "./WorkItem";
 
 const App = (props) => {
   return (
@@ -14,7 +15,11 @@ const App = (props) => {
         return <PostItem post={post} key={post.title} />;
       })}
       <h2 className={styles.heading}>Works</h2>
-      <div className={styles.workItems}></div>
+      <div className={styles.workItems}>
+        {props.works.map((work) => {
+          return <WorkItem work={work} key={work.name} />;
+        })}
+      </div>
     </Layout>
   );
 };

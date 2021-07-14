@@ -23,4 +23,25 @@ const posts = [
   },
 ];
 
-ReactDOM.render(<App posts={posts} />, document.getElementById("root"));
+const works = [
+  {
+    title: "「執筆DAYS」リニューアル",
+    roles: ["WordPress", "React"],
+    imageUrl: "/work.png",
+  },
+  {
+    title: "「締め切りつらみDAY」公式サイト",
+    roles: ["React", "Gatsby", "Figma"],
+    imageUrl: "/work.png",
+  },
+  {
+    title: "「ブルーバードコミックス」サービスサイト",
+    roles: ["React", "Next.js"],
+    imageUrl: "/work.png",
+  },
+];
+
+ReactDOM.render(
+  <App posts={posts} works={works} />,
+  document.getElementById("root")
+);

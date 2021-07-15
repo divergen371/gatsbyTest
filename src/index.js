@@ -1,8 +1,8 @@
+import "minireset.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import "minireset.css";
-import "./index.css";
 import App from "./App";
+import "./index.css";
 
 const posts = [
   {
